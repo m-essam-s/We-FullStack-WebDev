@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+
+p{
+    color: rgb(255, 0, 255);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+span{
+    font-size: 60px;
+}
+.L{
+    color: royalblue;
+    
+}
+.i{
+    color: red;
+}
