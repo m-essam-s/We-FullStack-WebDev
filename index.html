@@ -1,102 +1,43 @@
-<!--Document Title: Essam's Site -->
 <!DOCTYPE html>
-
-<!--html tag: contains all the content of the page-->
 <html lang="en">
-
-<!--head tag: contains meta data, title, and links to external files-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essam's Site</title>
+    <title>Essam's site</title>
     <link rel="icon" type="image/x-icon" href="./assets/icon/Ghost.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<!--
-    body tag: contains all the content of the page
-    body tag can contain the following tags:
-    - header tag: contains the header of the page
-    - nav tag: contains the navigation links of the page
-    - section tag: contains the main content of the page
-    - article tag: contains the article of the page
-    - aside tag: contains the side content of the page
-    - footer tag: contains the footer of the page 
-    - img tag: contains the image of the page
-    - h1-h6 tags: contains the headings of the page
-    - iframe tag: contains the embedded content of the page
-    - ul tag: contains the unordered list of the page
-    - ol tag: contains the ordered list of the page
- -->
-
 <body>
-    <div id="App" align="center">
-        <header>
-            <h1>Mohamed Essam</h1>
-            <h4>Full Stack Web Developer</h4>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <article id="home">
-                <h2>Home</h2>
-                <img 
-                    src="./assets/img/profile.jpg"
-                    alt="Mohamed Essam"
-                    title="Mohamed Essam"
-                    width="400">
-                <p>Welcome to my site. I am a full stack web developer. </p>
-            </article>
-
-            <article id="about">
-                <h2>About</h2>
-                <p>I am a full stack web developer. I am passionate about web development and I am always learning new
-                    technologies.
-                    I am currently learning ReactJs and PHP Laravel. I am also interested in learning Python and Machine
-                    Learning.
-                    I am excited to share my knowledge with you. I hope you enjoy my site.</p>
-            </article>
-
-            <article id="contact">
-                <h2>Contact</h2>
-                <ul>
-                    <li><span>Email: <a 
-                        href="mailto:sir.m.essam.g@gmail.com" 
-                        target="_blank">sir.m.essam.g@gmail.com</a></span></li>
-                    <li><span>LinkedIn: <a 
-                        href="https://www.linkedin.com/in/m-essam/" 
-                        target="_blank">linkedin.com/in/m-essam</a></span></li>
-                    <li><span>GitHub: <a 
-                        href="https://github.com/m-essam-s" target="_blank">github.com/m-essam-s</a></span></li>
-                    <li><span>X: <a 
-                        href="https://x.com/m_essam_s" 
-                        target="_blank" >x.com/m_essam_s</a></span></li>
-                </ul>
-            </article>
-        </section>
-        <section style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; background-color: #f9f9f9;">
-            <h3 style="color: #333;">Tasks:</h3>
-            <ol>
-                <li><a href="./tasks/SirTimBernersLee/index.html" target="_blank">Sir Tim Berners Lee</a></li>
-                <li><a href="./tasks/MyFavouriteCars/index.html" target="_blank">MyFavourite  Cars</a></li>
-                <li><a href="./tasks/VideoloadingScreen/index.html" target="_blank">Video loading Screen</a></li>
-                <li><a href="./tasks/YourbestSinger/index.html" target="_blank">Your best Singer</a></li>
-                <li><a href="./tasks/TheGodfatherFilm/index.html" target="_blank">The Godfather Film</a></li>
-            </ol>
-        </section>
-        <footer>
-            <p>Achnowledgement: This site is built using HTML5.</p>
-            <img 
-                src="./assets/img/logo.png" 
-                alt="https://www.te.eg/" 
-                title="We telecom egypt">
-            <p>&copy; 2024 Mohamed Essam</p>
-        </footer>
+    <header>
+        <a href="#" class="logo">m. Essam.</a>
+        <nav class="nav-links">
+            <a href="#" class="active-page">Home</a>
+            <a href="./tasks/index.html">Tasks</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Mohamed Essam</h1>
+            <h3>Full-Stack Web Developer</h3>
+            <p>I am passionate about web development and continuously learning new technologies. Currently learning
+                ReactJs and PHP Laravel. I am also interested in Python and Machine Learning. I am excited to share
+                my knowledge with you. I hope you enjoy my site. </p>
+            <div class="btn-box">
+                <a href="">Hire Me</a>
+                <a href="">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/m-essam/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/m-essam-s" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://x.com/m_essam_s" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/9f15208743.js" crossorigin="anonymous"></script>
     </div>
 </body>
 

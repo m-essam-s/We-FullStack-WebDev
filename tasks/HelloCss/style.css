@@ -1,0 +1,30 @@
+/*
+    css code for the HelloCss task
+ */
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(130, 164, 238);
+    font-size: 50px;
+
+}
+
+h2 {
+    color: rgb(237, 23, 237);
+    font-size: 40px;
+
+}
+
+h3 {
+    color: rgb(13, 237, 163);
+    font-size: 30px;
+
+}
