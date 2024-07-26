@@ -1,0 +1,40 @@
+/* task-container  Style */
+.task-container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10%;
+}
+
+.task{
+    /* border: 2px solid #00abf0;
+    border-radius: 12px; */
+    padding: 40px;
+    width: 45%;
+    margin: 0 10px;
+}
+
+.task h3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #ededed;
+}
+
+
+
+.task ul{
+    list-style: none;
+}
+
+.task ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #00abf0;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.task ul li a:hover{
+    color: #82dbff;
+}
