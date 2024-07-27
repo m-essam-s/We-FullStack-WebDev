@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #010b54;
+    --secondary-color: #fff;
+}
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 1px;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 60px;
+    letter-spacing: 3px;
+
+}
+
+.topics-section {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.topics-section h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 50px 0px;
+    letter-spacing: 3px;
+}
+
+.topic-container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.topicheader {
+    font-size: 40px;
+    text-align: center;
+    margin: 50px 0px;
+    letter-spacing: 3px;
+}
+
+.topic {
+    width: 32%;
+    border: 2px solid #ccc;
+    text-align: center;
+    box-shadow: 10px 10px 10px #ddd;
+    border-radius: 10px;
+    float: left;
+    padding: 30px;
+    margin-right: 1%;
+}
+
+.topic img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+    transition: .2s;
+}
+
+.topic:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.watchvideo-section {
+    margin: 50px auto 100px;
+    text-align: center;
+    padding: 30px;
+    background-color: #010b54;
+    color: white;
+}
+
+.watchvideo-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+
+}
+
+.watchvideo-section iframe {
+    width: 80%;
+    height: 600px;
+    border-radius: 20px;
+}
+
+
+.subscribe-section {
+    margin: 70px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.subscribe-section h3 {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.subscribe-section input {
+    width: 50%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.subscribe-section button {
+    width: 50%;
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.subscribe-section button:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #010b54;
+    color: white;
+}
