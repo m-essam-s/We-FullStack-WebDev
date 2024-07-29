@@ -46,13 +46,4 @@ form button:hover{
     background-color: #444;
 }
 
-form .error{
-    color: red;
-    margin-bottom: 10px;
-}
-
-form .success{
-    color: green;
-    margin-bottom: 10px;
-}
 
