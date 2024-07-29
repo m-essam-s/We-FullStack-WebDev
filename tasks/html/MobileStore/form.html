@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Apple Store</h1>
+    </header>
+
+    <form action="./recive.html">
+        <h2>
+            Requisition form
+        </h2>
+        <div class="info">
+            <div class="info-1 form-control">
+                <label for="usr-name">User Name: </label>
+                <input autofocus id="usr-name" type="text" placeholder="User Name" required><br>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+
+                <label for="pass"> Enter your password: </label>
+                <input id="pass" type="password" placeholder="Password" required><br>
+            </div>
+
+            <div class="info-2 form-control">
+                <label for="phone"> Enter your phone: </label>
+                <input id="phone" type="tel" placeholder="Phone" name="phone" required><br>
+
+                <label for="date-time">Received date:</label>
+                <input id="date-time" type="datetime-local" name="date" required><br>
+                <div class="gender-box">
+                    <span>
+                        Gender:
+                    </span>
+
+                    <div class="gender">
+                        <label for="male">Male</label>
+                        <input name="gender" id="male" type="radio" value="male">
+                    </div>
+                    <div class="gender">
+                        <label for="female">Female</label>
+                        <input name="gender" id="female" type="radio" value="female">
+                    </div>
+
+                </div>
+
+                <label for="countries">Choose a country:</label>
+                <select id="countries" name="country">
+                    <option value="">Select a country</option>
+                </select>
+
+                <div class="buttons">
+                    <input type="reset" value="Clear">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <script src="./js/countries.js"></script>
+</body>
+
+</html>
