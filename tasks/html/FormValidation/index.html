@@ -5,35 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
-    <link rel="stylesheet" href="./stylr.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <h1>Form Validation</h1>
-    <form action="index.html" method="get">
-        <label for="usr-name">Enter your name: </label>
-        <input id="usr-name" type="text" placeholder="User Name" required autofocus><br>
+    <form action="./data.html" method="get">
+        <label for="usr-name">Enter your name </label>
+        <input id="usr-name" type="text" name="usr" placeholder="User Name" required autofocus><br>
 
-        <label for="email"> Enter your email: </label>
-        <input id="email" type="email" placeholder="Email" required><br>
+        <label for="email"> Enter your email </label>
+        <input id="email" type="email" name="email" placeholder="Email" required><br>
 
-        <label for="phone"> Enter your phone: </label>
-        <input id="phone" type="tel" placeholder="Phone" required><br>
+        <label for="phone"> Enter your phone </label>
+        <input id="phone" type="tel" name="phone" placeholder="Phone" required><br>
 
-        <label for="pass"> Enter your password: </label>
-        <input id="pass" type="password" placeholder="Password" required><br>
+        <label for="pass"> Enter your password </label>
+        <input id="pass" type="password" name="pass" placeholder="Password" required><br>
 
-        <label for="date-time">Enter your barth date: </label>
-        <input id="date-time" type="datetime-local" required><br>
+        <label for="status">Enter your Status</label>
+        <select name="status" id="status" required>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="in-realtion">In Realtionship</option>
+        </select><br>
 
-        
-        <label for="">Gender</label>
-        
-        <label for="male">Male</label>
-        <input name="gender" id="male" type="radio" value="male">
+        <label>Enter your Photo</label>
+        <input name="profile-url"  type="file">
 
-        <label for="female">Female</label>
-        <input name="gender"id="female" type="radio" value="female"><br>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
     </form>

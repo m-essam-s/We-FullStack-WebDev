@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #ea74fa, #f1f1f1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form,
+table {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f8e3fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(238, 120, 228);
+    transition: 0.5s;
+}
+
+form:hover,
+table:hover {
+    box-shadow: 0 0 20px rgb(207, 42, 194);
+}
+
+form input,
+select {
+    background-color: #f8e3fa;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid #9320e0;
+    transition: 0.3s;
+}
+
+form input:focus,
+select:focus,
+input:hover,
+select:hover {
+    outline: none;
+    border-bottom: 1.5px solid #ff00dd;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    width: 49.5%;
+    display: inline-flex;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+input::file-selector-button {
+    color: #fff;
+    padding: 0.5em;
+    border: #9d44f1 1px solid;
+    background-color: #9d44f1;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+input::file-selector-button:hover {
+    background-color: #fff;
+    color: #9d44f1;
+}
+
+form input[type="submit"] {
+    color: #fff;
+    background-color: #9d44f1;
+    border: 1px solid #9d44f1;
+}
+
+form input[type="submit"]:hover {
+    color: #9d44f1;
+    background-color: #fff;
+}
+
+form input[type="reset"] {
+    color: #fff;
+    background-color: #f00;
+    border: 1px solid #f00;
+}
+
+form input[type="reset"]:hover {
+    background-color: #fff;
+    color: #f00;
+
+}
+
+img {
+    width: 50px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+table th,   table td {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #9d44f1;
+    border: 1px solid #9d44f1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    width: 80%;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #9d44f1;
+}

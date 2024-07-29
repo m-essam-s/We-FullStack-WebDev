@@ -1,0 +1,124 @@
+form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
+}
+
+form h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+form .form-control {
+    margin-bottom: 1rem;
+}
+
+form .form-control label {
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-1,
+.info-2 {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gender-box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 13px 0;
+}
+
+.gender-box span {
+    margin: auto 0.9rem auto 0rem;
+    font-size: 1.2rem;
+
+}
+
+.gender {
+    border: #949393 solid 1px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-flex;
+    margin: auto;
+    /* width: 35%; */
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.9rem;
+
+}
+
+form .form-control input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .form-control textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .form-control select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    border: none;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.buttons input {
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: 0.2s;
+    margin: 5px;
+
+}
+
+.buttons input:hover {
+    background-color: var(--secondary-color);
+}
+
+
+@media screen and (max-width: 1270px) {
+    form {
+        width: 80%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info-1,
+    .info-2 {
+        width: 100%;
+
+    }
+}
