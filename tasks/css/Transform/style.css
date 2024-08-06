@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(4, 146, 202, 0.8), rgba(255, 0, 242, 0.8));
+    font-family: 'poppins', sans-serif;
+}
+
+h1,h3,.card{
+    text-align: center;
+}
+
+.card{
+    margin-top: 50px;
+    border-top: rgb(140, 35, 238) 2px solid;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 1%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    transition: 2s;
+}
+
+.img1{
+    background-color: rgb(255, 0, 0);
+}
+
+.img1:hover{
+    border-radius: 50%;
+    box-shadow: 2px 1px 20px #eee;
+    cursor: pointer;
+}
+.img2:hover{
+transform: scale(2);
+cursor: zoom-in;
+
+
+
+}
+.img3{
+width: 400px;
+height: 400px;
+    cursor: zoom-in;
+}
+.img3:hover{
+    transform: scale(0.5);
+    cursor: zoom-out;
+}
+
+
+
+.img4:hover{
+    transform: rotate(45deg);
+    margin-bottom: 40px;
+}
+
+.img5:hover{
+    transform: translateX(300px);
+    
+}
+.img6:hover{
+    transform: translateX(-300px);
+    
+}
+.img7:hover{
+    transform: skew(45deg);
+    
+}
+.img8:hover{
+    transform: rotate(360deg);
+    border-radius: 50%;
+}
