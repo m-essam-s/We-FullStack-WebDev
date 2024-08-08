@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <main>
-        <div class="task-calc">
-            <button onclick="taskCalc()" >Start</button>
-        </div>
-
-
-
-        <div class="real-calc">
-            <h1>Age Calculator</h1>
-        <form action="index.php" method="post">
-            <label for="dob">Date of Birth:</label>
-            <input type="date" name="dob" id="dob" required>
-            <button type="submit">Calculate</button>
-        </form>
-        </div>
-        
-        
+        <section class="task-calc">
+            <h1>Our Task</h1>
+            <button onclick="taskCalc()">Start</button>
+        </section>
+        <section class="real-calc">
+            <h1>Real Age Calculator</h1>
+            
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" required>
+                <button type="submit" onclick="realCalc()">Calculate</button>
+                <p id="result"></p>
+            
+        </section>
     </main>
     <script src="./script.js"></script>
 </body>
+
 </html>
