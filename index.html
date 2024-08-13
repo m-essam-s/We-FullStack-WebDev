@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>Essam's site</title>
     <link rel="icon" type="image/x-icon" href="./assets/icon/Ghost.ico">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dataTheme.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -16,9 +17,11 @@
 
     <header>
 
-        <a href="#home" class="link" data-section="home">
-            <img src="./assets/img/Dark-300-300px.png" class="logo" id="logo">
-        </a>
+        <div class="logo">
+            <a class="link " data-section="home" href="#home">
+                <img src="./assets/img/Light-300-300px.png" class="logo-ico" id="logo">
+            </a>
+        </div>
 
         <nav class="nav-links">
             <a class="link" data-section="home" href="#home"><i class="fa-solid fa-house"></i></a>
@@ -35,8 +38,10 @@
             <a href="https://x.com/m_essam_s" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
 
-        <div class="theme-notifier">
-            <i class='bx bx-moon' id="theme-button"></i>
+        <div class="theme-notifier ">
+            <button type="button" data-theme-toggle aria-label="Change to light theme">
+                <i class='bx bx-moon' id="theme-button"></i>
+            </button>
         </div>
 
     </header>
@@ -49,16 +54,16 @@
                 <p>I am passionate about web development and continuously learning new technologies. Currently learning
                     ReactJs and PHP Laravel. I am also interested in Python and Machine Learning. I am excited to share
                     my knowledge with you. I hope you enjoy my site. </p>
-                <div class="btn-box">
-                    <a href="">Mail Me</a>
-                    <a href="">Let's Chat</a>
+                    <div class="btn-box">
+                        <a href="mailto:sir.m.essam.g@gmail.com">Mail Me</a>
+                        <a href="https://wa.me/+201118236797?text=">Let's Talk</a>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section class="curriculums" id="curriculums">
-            <h2>Curriculums</h2>
-            <div class="curriculums-content" id="curriculums-content">
+            <h2 class="sec-title">Curriculums</h2>
+            <div class="sec-content curriculums-content" id="curriculums-content">
                 <div class="content">
                     <h3>HTML</h3>
                     <div>
@@ -162,16 +167,18 @@
         </section>
 
         <section class="content" id="content">
-            <h2>Content</h2>
+            <h2 class="sec-title">Content</h2>
+            <div class="sec-content"></div>
         </section>
 
         <section class="about" id="about">
-            <h2>About</h2>
+            <h2 class="sec-title">About</h2>
+            <div class="sec-content"></div>
         </section>
 
         <section class="tasks" id="tasks">
-            <h2>Tasks</h2>
-            <div class="tasks-container  ">
+            <h2 class="sec-title">Tasks</h2>
+            <div class="tasks-container  sec-content">
                 <div class="html-tasks task">
                     <h3>HTML</h3>
                     <div>
@@ -211,12 +218,14 @@
                 </div>
         </section>
         <section class="projects" id="projects">
-            <h2>Projects</h2>
+            <h2 class="sec-title">Projects</h2>
+            <div class="sec-content"></div>
         </section>
     </main>
     <script src="./js/script.js"></script>
     <script src="./js/curriculumsContent.js"></script>
     <script src="./js/theme-picker.js"></script>
+    <script src="./js/routing.js"></script>
     <script src="https://kit.fontawesome.com/9f15208743.js" crossorigin="anonymous"></script>
     
 </body>
