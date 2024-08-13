@@ -1,19 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary-font-color: white;
-    --secondary-font-color: black;
-    --ternary-font-color: #00abf0;
-    --primary-bg-color: black;
-    --secondary-bg-color: white;
-    --ternary-bg-color: #00abf0;
-}
-
-*.dark-theme {
-    --primary-font-color: black;
-    --secondary-font-color: black;
-    --primary-bg-color: white;
-    --secondary-bg-color: white;
+    --grid-unit: 1rem;
+    --border-radius-base: 0.5rem;
 }
 
 * {
@@ -24,9 +13,9 @@
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--primary-bg-color);
-    color: var(--primary-font-color);
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
     display: flex;
 }
 
@@ -35,158 +24,224 @@ header, nav{
     flex-direction: column;
 }
 
-header{
-    position: fixed;
-    border-right: 1px solid var(--primary-font-color) ;
+header {
+    position: absolute;
+    border-right: 1px solid var(--secondary-font-color);
     padding: 5px;
-    width: 70px;
-    height: 100vh;
+    width: fit-content;
+    min-height: 100vh;
     text-align: center;
     justify-content: space-between;
 }
-
-.logo{
+.logo-ico {
     margin-top: 10px;
     width: 40px;
 }
 
-.nav-links{
-    display: flex;
-    justify-content: center;
-}
-
-.nav-links a{
+.nav-links a , .social-links a {
     text-decoration: none;
-    color: var(--primary-font-color);
-    margin: 0px 5px;
+    color: var(--secondary-font-color);
+    margin: 3px 6px;
     padding: 10px;
     border-radius: 10px;
 }
-
-.nav-links a i{
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+.nav-links a i {
     font-size: 23px;
 }
 
-.nav-links a:hover{
-    color: var(--ternary-font-color);
+.social-links a i {
+    font-size: 25px;
 }
 
-.nav-links a.active{
-    color: var(--secondry-bg-color);
-    background-color: var(--ternary-font-color);
+.nav-links a:hover, .social-links a:hover {
+    background-color: var(--ternary-color);
+    
 }
 
-.social-links{
-    display: flex;
-    flex-direction: column;
-    justify-self: end;
+.nav-links a.active {
+    background-color: var(--ternary-color);
 }
 
-.social-links a{
-    text-decoration: none;
-    color: var(--primary-font-color);
-    margin: 10px 5px;
-}
-
-.social-links a:hover{
-    color: var(--ternary-font-color);
-}
-
-.social-links a i{
-    font-size: 30px;
-}
-
-.theme-notifier{
+.theme-notifier {
     margin-bottom: 10px;
 }
 
-.theme-notifier i{
+.theme-notifier i {
     font-size: 23px;
+    color: var(--secondary-font-color);
     cursor: pointer;
 }
 
-.theme-notifier i:hover{
-    color: var(--ternary-font-color);
+.theme-notifier i:hover {
+    color: var(--ternary-color);
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0px 0px 0px 80px;
-}
-
-section{
-    display: flex;
-    flex-direction: column;
-    padding: 20px 20px;
-    min-height: 100vh;
+    margin: 0px 0px 0px 70px;
 }
 
 section {
-    padding: 50px;
-    min-height: 100vh;
-    display: none; /* Hide all sections by default */
+    display: none;
+    /* Hide all sections by default */
 }
 
 section.active {
-    display: block; /* Show the active section */
+    display: block;
+    padding: 20px 30px;
+    min-height: 100vh;
+    /* Show the active section */
 }
 
-section h2{
+section.active .sec-title{
     font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section.active .sec-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
 
 /* Home Section */
 
-section.home.active{
+section.home.active {
     display: flex;
-    justify-content: center;
-    align-items:baseline;
+    justify-content: baseline;
+    align-items: center;
 }
 
-section.home h1{
-    font-size: 3rem;
-    margin-bottom: 20px;
+section.home.active h1 {
+    position: relative;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-section.home h3{
-    font-size: 2rem;
-    margin-bottom: 20px;
+section.home.active .home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    font-size: 25px;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
 }
 
-section.home p{
+section.home.active .home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--ternary-color);
+}
+section.home.active .home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    font-size: 25px;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+section.home.active p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-section.home .home-content{
+section.home.active .home-content {
     max-width: 1300px;
 }
 
-.btn-box{
+.home-content .btn-box {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-    width: 300px;
+    width: 345px;
+    height: 50px;
 }
 
-.btn-box a{
+.home-content .btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--ternary-color);
+    border: 2px solid var(--ternary-color);
+    border-radius: 8px;
+    font-size: 19px;
+    color: var(--bg-color);
+    letter-spacing: 1px;
     text-decoration: none;
-    color: var(--primary-font-color);
-    background-color: var(--ternary-font-color);
-    padding: 10px 20px;
-    border: 2px solid var(--ternary-font-color);
-    border-radius: 10px;
-    font-size: 1.1rem;
-    transition: 0.3s;
-    
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
 }
 
-.btn-box a:hover{
-    background-color: var(--secondary-font-color);
-    color: var(--ternary-font-color);
+.home-content .btn-box a:hover {
+    color: var(--ternary-color);
+    border: 2px solid var(--ternary-color);
 }
+
+.home-content .btn-box a:nth-child(2) {
+    background: transparent;
+    color: var(--ternary-color);
+    transition: .5s;
+}
+
+.home-content .btn-box a:nth-child(2):hover {
+    color: var(--bg-color);
+    border: 2px solid var(--ternary-color);
+
+}
+
+.home-content .btn-box a:nth-child(2)::before {
+    background: var(--ternary-color);
+}
+
+.home-content .btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+    border-radius: 8px;
+
+
+}
+
+.home-content .btn-box a:hover::before {
+    width: 100%;
+}
+
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
 /* End-Home Section */
 
 /* Curriculums Section */
@@ -217,7 +272,7 @@ section.curriculums .curriculums-content .content div{
     flex-direction: column;
     margin: 5px;
     padding: 5px;
-    /* border: 1px solid var(--primary-font-color); */
+    /* border: 1px solid var(--font-color); */
     border-radius: 5px;
     width: fit-content;
     height: fit-content;
@@ -225,8 +280,8 @@ section.curriculums .curriculums-content .content div{
 }
 
 .curriculums-content .content div span{
-    color: var(--primary-font-color);
-    background-color: var(--ternary-font-color);
+    color: var(--font-color);
+    background-color: var(--ternary-color);
     margin-right: 5px;
     border-radius: 50px;
     margin-bottom: 5px;
@@ -273,18 +328,20 @@ section .tasks-container .task div{
 }
 
 section .tasks-container .task div a{
-    color: var(--primary-font-color);
-    background-color: var(--ternary-font-color);
+    color: var(--font-color);
+    background-color: var(--ternary-color);
     text-decoration: none;
     margin-right: 5px;
     border-radius: 50px;
     margin-bottom: 5px;
     font-size: normal;
-    padding: 0px 5px;
+    padding: 0px 6px;
     transition: 0.3s;
+    border: 2px solid var(--ternary-color);
 }
 
 section .tasks-container .task div a:hover{
-    background-color: var(--secondary-font-color);
-    color: var(--ternary-font-color);
+    background-color: transparent;
+    color: var(--ternary-color);
+    border: 2px solid var(--ternary-color);
 }
