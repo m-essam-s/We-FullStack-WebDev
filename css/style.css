@@ -111,7 +111,6 @@ section.active .sec-content {
 }
 
 /* Home Section */
-
 section.home.active {
     display: flex;
     justify-content: baseline;
