@@ -9,13 +9,6 @@ function createCurriculum(title, items, imageUrl) {
     h3.textContent = title;
     contentDiv.appendChild(h3);
 
-    // Create an img element for the icon
-    // const img = document.createElement('img');
-    // img.src = imageUrl;
-    // img.alt = `${title} Icon`;
-    // img.className = 'curriculum-icon';
-    // contentDiv.appendChild(img);
-
     // Create a div for the list of items
     const itemsDiv = document.createElement('div');
 
